@@ -1,0 +1,52 @@
+[
+  {
+    "id": "github-pr-reviewer",
+    "type": "skill",
+    "name": "GitHub PR Reviewer",
+    "version": "1.0.0",
+    "description": "Automated code review on pull requests. Tags issues by severity.",
+    "tags": ["development", "code-review"],
+    "compatible_agents": ["claude-code", "codex"],
+    "inputs": ["repo_url", "pr_number"]
+  },
+  {
+    "id": "content-calendar",
+    "type": "workflow",
+    "name": "Content Calendar",
+    "version": "1.0.0",
+    "description": "Weekly content planning with scheduling, drafting, and publish tasks.",
+    "tags": ["marketing", "content"],
+    "compatible_agents": ["*"],
+    "inputs": ["brand_voice", "publish_schedule"]
+  },
+  {
+    "id": "sales-outreach",
+    "type": "workflow",
+    "name": "Sales Outreach",
+    "version": "1.2.0",
+    "description": "Multi-step outreach sequence with personalization and follow-up tasks.",
+    "tags": ["sales"],
+    "compatible_agents": ["*"],
+    "inputs": ["target_persona", "product_name"]
+  },
+  {
+    "id": "notion-sync",
+    "type": "connector",
+    "name": "Notion Sync",
+    "version": "1.0.0",
+    "description": "Sync tasks and knowledge to a Notion workspace automatically.",
+    "tags": ["integration", "productivity"],
+    "compatible_agents": ["*"],
+    "inputs": ["notion_token", "database_id"]
+  },
+  {
+    "id": "slack-notifier",
+    "type": "skill",
+    "name": "Slack Notifier",
+    "version": "0.9.0",
+    "description": "Send status updates and alerts to Slack channels on agent events.",
+    "tags": ["notifications"],
+    "compatible_agents": ["*"],
+    "inputs": ["webhook_url", "channel"]
+  }
+]
